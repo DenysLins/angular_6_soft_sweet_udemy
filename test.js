@@ -1,7 +1,9 @@
-const sayHello = (n) => {
-    for (let i = 0; i < n; i++) {
-        console.log('Hello ' + i);
+var Person = /** @class */ (function () {
+    function Person() {
     }
-}
-
-sayHello(5);
+    Person.prototype.sayHello = function (name) {
+        console.log("Hello " + name);
+    };
+    return Person;
+}());
+new Person().sayHello("Denys");
